@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Colaborator — сессия</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/session.css" />
+    <script src="../js/theme-boot.js"></script>
+  </head>
+  <body class="workspace">
+    <div class="layout">
+      <aside class="sidebar card" aria-label="Список сессий">
+        <div class="sidebar__top">
+          <button class="icon-btn" id="backBtn" title="К списку сессий">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M19 12H5M11 18l-6-6 6-6" />
+            </svg>
+          </button>
+          <span class="sidebar__title">Сессии</span>
+          <button class="icon-btn" id="newSessionBtn" title="Создать сессию">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+          </button>
+        </div>
+        <div class="sidebar__search">
+          <div class="input-group">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="11" cy="11" r="7" />
+              <path d="m16.5 16.5 4.5 4.5" />
+            </svg>
+            <input
+              id="sessionSearch"
+              class="input"
+              type="search"
+              placeholder="Поиск сессий"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+        <div class="sidebar__list" id="sessionList"></div>
+        <div class="sidebar__foot">
+          <button class="btn btn--ghost btn--sm" id="optionsBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+              <path d="M4 7h10M18 7h2M4 17h2M10 17h10" />
+              <circle cx="16" cy="7" r="2" />
+              <circle cx="8" cy="17" r="2" />
+            </svg>
+            Настройки
+          </button>
+          <button class="btn btn--ghost btn--sm" data-theme-toggle>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+              <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+            </svg>
+            <span data-theme-label>Тема</span>
+          </button>
+        </div>
+      </aside>
+
+      <main class="main">
+        <section class="session-header card">
+          <div class="session-header__top">
+            <input
+              id="sessionName"
+              class="session-name"
+              type="text"
+              maxlength="120"
+              spellcheck="false"
+              aria-label="Имя сессии"
+            />
+            <div class="row" style="gap: 6px">
+              <span class="badge" id="statusBadge">—</span>
+              <button class="btn btn--ghost btn--sm" id="saveName" hidden>Сохранить</button>
+            </div>
+          </div>
+
+          <div class="session-header__meta hint" id="sessionMeta">—</div>
+
+          <div class="urls">
+            <div class="url-row">
+              <span class="url-row__label">Public</span>
+              <code class="url-row__value" id="publicUrl">—</code>
+              <button class="icon-btn" data-copy="publicUrl" title="Скопировать публичный URL">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <rect x="9" y="9" width="12" height="12" rx="2" />
+                  <path d="M5 15V5a2 2 0 0 1 2-2h10" />
+                </svg>
+              </button>
+            </div>
+            <div class="url-row">
+              <span class="url-row__label">Private</span>
+              <code class="url-row__value" id="privateUrl">—</code>
+              <button class="icon-btn" data-copy="privateUrl" title="Скопировать приватный URL">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <rect x="9" y="9" width="12" height="12" rx="2" />
+                  <path d="M5 15V5a2 2 0 0 1 2-2h10" />
+                </svg>
+              </button>
+            </div>
+            <div class="url-row">
+              <span class="url-row__label">Key</span>
+              <code class="url-row__value" id="secretKey">—</code>
+              <button class="icon-btn" id="revealKey" title="Показать/скрыть ключ">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </button>
+              <button class="icon-btn" data-copy="secretKey" title="Скопировать ключ">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <rect x="9" y="9" width="12" height="12" rx="2" />
+                  <path d="M5 15V5a2 2 0 0 1 2-2h10" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <details class="advanced" id="advanced">
+            <summary>Дополнительно: свой сервер и interactsh</summary>
+            <div class="advanced__grid">
+              <label class="field">
+                <span class="field__label">Public URL</span>
+                <input id="editPublicUrl" class="input mono" type="url" spellcheck="false" />
+              </label>
+              <label class="field">
+                <span class="field__label">Private (polling) URL</span>
+                <input id="editPrivateUrl" class="input mono" type="url" spellcheck="false" />
+              </label>
+              <label class="field">
+                <span class="field__label">Secret (interactsh)</span>
+                <input
+                  id="editSecret"
+                  class="input mono"
+                  type="password"
+                  spellcheck="false"
+                  autocomplete="off"
+                  placeholder="необязательно"
+                />
+              </label>
+            </div>
+            <div class="advanced__actions">
+              <button class="btn btn--secondary btn--sm" id="saveAdvanced">Сохранить</button>
+              <span class="hint">
+                Секрет нужен для расшифровки ответов self-hosted interactsh (AES-256-CTR). Для чужого домена
+                потребуется разрешение браузера.
+              </span>
+            </div>
+          </details>
+
+          <div class="session-header__actions">
+            <button class="btn" id="togglePoll">Start</button>
+            <button class="btn btn--secondary" id="pollNow">Проверить</button>
+            <button
+              class="btn btn--secondary"
+              id="testInteraction"
+              title="Сгенерировать тестовое взаимодействие"
+            >
+              Тест
+            </button>
+            <span class="grow"></span>
+            <button class="btn btn--secondary btn--sm" id="exportReport" title="Скачать Markdown-отчёт">
+              Отчёт .md
+            </button>
+            <button class="btn btn--secondary btn--sm" id="exportJson" title="Скачать JSON сессии">
+              JSON
+            </button>
+            <button class="btn btn--danger-ghost btn--sm" id="deleteSessionBtn">Удалить</button>
+          </div>
+
+          <div class="banner banner--error" id="errorBanner" hidden></div>
+        </section>
+
+        <section class="logs card">
+          <div class="logs__toolbar">
+            <div class="input-group grow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="11" cy="11" r="7" />
+                <path d="m16.5 16.5 4.5 4.5" />
+              </svg>
+              <input
+                id="logFilter"
+                class="input"
+                type="search"
+                placeholder="Фильтр: протокол, клиент, содержимое"
+                autocomplete="off"
+              />
+            </div>
+            <select id="protocolFilter" class="select" style="width: auto" aria-label="Протокол">
+              <option value="">Все протоколы</option>
+            </select>
+            <span class="badge" id="logCount">0</span>
+            <button class="icon-btn" id="refreshLogs" title="Обновить список">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M21 4v6h-6" />
+                <path d="M3 20v-6h6" />
+                <path d="M20.5 9A9 9 0 0 0 5 5.5L3 9" />
+                <path d="M3.5 15A9 9 0 0 0 19 18.5l2-3.5" />
+              </svg>
+            </button>
+            <button class="icon-btn" id="clearLogs" title="Очистить логи">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14" />
+              </svg>
+            </button>
+            <label class="switch" title="Автообновление каждые 5 секунд">
+              <input type="checkbox" id="autoRefresh" checked />
+              <span class="small muted">Авто</span>
+            </label>
+          </div>
+          <div class="logs__list" id="logList"></div>
+          <div class="logs__more" id="logsMore" hidden>
+            <button class="btn btn--secondary btn--sm" id="loadMore">Показать ещё</button>
+          </div>
+        </section>
+      </main>
+
+      <aside class="inspector card" id="inspector" aria-label="Инспектор взаимодействия">
+        <div class="inspector__head">
+          <span class="tag" id="inspProtocol">—</span>
+          <span class="hint" id="inspTime"></span>
+          <span class="grow"></span>
+          <button class="icon-btn" id="inspClose" title="Закрыть инспектор">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M18 6 6 18M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="inspector__summary" id="inspSummary">Выберите взаимодействие из списка</div>
+        <dl class="inspector__fields" id="inspFields"></dl>
+        <div class="inspector__views" id="inspViews" hidden>
+          <div class="segmented" id="inspTarget">
+            <button class="segmented__item" data-target="request" aria-pressed="true">Запрос</button>
+            <button class="segmented__item" data-target="response" aria-pressed="false">Ответ</button>
+          </div>
+          <div class="segmented segmented--sm" id="inspMode">
+            <button class="segmented__item" data-mode="text" aria-pressed="true">Текст</button>
+            <button class="segmented__item" data-mode="hex" aria-pressed="false">HEX</button>
+            <button class="segmented__item" data-mode="strings" aria-pressed="false">Строки</button>
+          </div>
+          <div class="inspector__payload" id="inspPayload"></div>
+          <div class="inspector__copy">
+            <button class="btn btn--secondary btn--sm" data-copy-part="base64">Base64</button>
+            <button class="btn btn--secondary btn--sm" data-copy-part="hex">HEX</button>
+            <button class="btn btn--secondary btn--sm" data-copy-part="json">JSON</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="inspector-backdrop" id="inspectorBackdrop"></div>
+    <script type="module" src="../js/ui/session.js"></script>
+  </body>
+</html>

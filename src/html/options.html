@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Colaborator — настройки</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/options.css" />
+    <script src="../js/theme-boot.js"></script>
+  </head>
+  <body class="options">
+    <header class="page-head">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="12" r="2.6" fill="currentColor" stroke="none" />
+            <circle cx="12" cy="12" r="6.4" opacity="0.65" />
+            <path d="M12 5.6V3M12 21v-2.6M5.6 12H3M21 12h-2.6" opacity="0.8" />
+          </svg>
+        </span>
+        <div>
+          <h1 class="brand-name">Colaborator</h1>
+          <div class="hint">Настройки · <span id="appVersion">2.0.0</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <button class="btn btn--secondary btn--sm" id="openDashboard">Открыть дашборд</button>
+        <button class="btn btn--ghost btn--sm" data-theme-toggle>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+          </svg>
+          <span data-theme-label>Тема</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="stack">
+      <section class="card">
+        <div class="panel-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+            <path d="M4 7h10M18 7h2M4 17h2M10 17h10" />
+            <circle cx="16" cy="7" r="2" />
+            <circle cx="8" cy="17" r="2" />
+          </svg>
+          Опрос сервера
+        </div>
+        <div class="panel-body stack-sm">
+          <label class="setting">
+            <span class="setting__label">
+              Интервал опроса
+              <span class="hint">От 30 секунд до 15 минут. Chrome ограничивает минимум 30 секундами.</span>
+            </span>
+            <span class="row">
+              <input
+                id="pollInterval"
+                class="input input--number"
+                type="number"
+                min="30"
+                max="900"
+                step="10"
+              />
+              <span class="hint">сек</span>
+            </span>
+          </label>
+
+          <label class="setting">
+            <span class="setting__label">
+              Хранить логов на сессию
+              <span class="hint">Старые взаимодействия удаляются автоматически.</span>
+            </span>
+            <span class="row">
+              <input id="maxLogs" class="input input--number" type="number" min="50" max="5000" step="50" />
+              <span class="hint">шт</span>
+            </span>
+          </label>
+
+          <label class="setting">
+            <span class="setting__label">
+              Опрашивать сразу при открытии сессии
+              <span class="hint">Один внеочередной запрос при открытии страницы сессии.</span>
+            </span>
+            <input id="pollOnOpen" class="switch-input" type="checkbox" />
+          </label>
+
+          <label class="setting">
+            <span class="setting__label">
+              Возобновлять polling после перезапуска браузера
+              <span class="hint">Если выключено, активные сессии останавливаются при старте.</span>
+            </span>
+            <input id="autoResume" class="switch-input" type="checkbox" />
+          </label>
+
+          <label class="setting">
+            <span class="setting__label">
+              Уведомления о новых взаимодействиях
+              <span class="hint">Одно системное уведомление на цикл опроса.</span>
+            </span>
+            <input id="notifications" class="switch-input" type="checkbox" />
+          </label>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="panel-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+            <circle cx="12" cy="12" r="9" />
+            <path d="M12 11v5M12 8v.5" />
+          </svg>
+          Внешний вид и домены
+        </div>
+        <div class="panel-body stack-sm">
+          <label class="setting">
+            <span class="setting__label">
+              Тема оформления
+              <span class="hint">«Системная» следует настройкам ОС.</span>
+            </span>
+            <select id="themeSelect" class="select" style="width: 180px">
+              <option value="system">Системная</option>
+              <option value="light">Светлая</option>
+              <option value="dark">Тёмная</option>
+            </select>
+          </label>
+
+          <label class="setting">
+            <span class="setting__label">
+              Домен для новых сессий
+              <span class="hint"
+                >Например, <code>oastify.com</code>. Для новых сессий публичный URL будет
+                <code>&lt;label&gt;.&lt;домен&gt;</code>.</span
+              >
+            </span>
+            <input id="defaultHost" class="input" style="width: 240px" type="text" spellcheck="false" />
+          </label>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="panel-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+            <path d="m12 3 9 5-9 5-9-5z" />
+            <path d="m3 13 9 5 9-5" />
+          </svg>
+          Данные
+        </div>
+        <div class="panel-body stack">
+          <div class="stats" id="stats">
+            <div class="stat">
+              <span class="stat__value" id="statSessions">0</span>
+              <span class="stat__label">сессий</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value" id="statActive">0</span>
+              <span class="stat__label">активных</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value" id="statLogs">0</span>
+              <span class="stat__label">взаимодействий</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value" id="statSize">0 B</span>
+              <span class="stat__label">в хранилище</span>
+            </div>
+          </div>
+
+          <div class="row row--wrap">
+            <button class="btn btn--secondary" id="exportAllBtn">Экспорт всех данных (JSON)</button>
+            <button class="btn btn--secondary" id="exportReportBtn">Экспорт отчёта (Markdown)</button>
+            <button class="btn btn--secondary" id="refreshStatsBtn">Обновить статистику</button>
+          </div>
+
+          <hr class="divider" />
+
+          <div class="stack-sm">
+            <div class="field__label">Импорт</div>
+            <div class="row row--wrap">
+              <select id="importMode" class="select" style="width: 210px">
+                <option value="merge">Объединить с текущими</option>
+                <option value="replace">Заменить всё</option>
+              </select>
+              <button class="btn btn--secondary" id="importBtn">Выбрать файл…</button>
+              <input
+                id="importFile"
+                type="file"
+                accept=".json,.txt,.b64,application/json,text/plain"
+                hidden
+              />
+            </div>
+            <div class="hint">
+              Поддерживается JSON, созданный этим расширением (включая файлы v1 в base64).
+            </div>
+          </div>
+
+          <hr class="divider" />
+
+          <div class="row row--wrap">
+            <button class="btn btn--danger-ghost" id="clearAllBtn">Удалить все данные</button>
+            <button class="btn btn--ghost" id="resetSettingsBtn">Сбросить настройки</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="panel-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+            <path d="M12 3 5 6v6c0 4 3 7 7 8 4-1 7-4 7-8V6z" />
+            <path d="m9 12 2 2 4-4" />
+          </svg>
+          Разрешения и приватность
+        </div>
+        <div class="panel-body stack-sm">
+          <div class="setting">
+            <span class="setting__label">
+              Свои серверы коллаборации
+              <span class="hint">
+                По умолчанию расширение обращается только к <code>*.oastify.com</code>. Если вы импортируете
+                сессии со своим (self-hosted interactsh) сервером, нужно выдать разрешение на этот домен.
+              </span>
+            </span>
+            <div class="row">
+              <span class="badge" id="permState">проверка…</span>
+              <button class="btn btn--secondary btn--sm" id="requestPermBtn">Выдать разрешение</button>
+            </div>
+          </div>
+          <p class="hint">
+            Все данные (ключи, URL, логи взаимодействий) хранятся локально в IndexedDB браузера и никуда не
+            отправляются. Единственные сетевые запросы — опрос ваших polling-URL.
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="panel-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+            <circle cx="12" cy="12" r="9" />
+            <path d="M12 11v5M12 8v.5" />
+          </svg>
+          О проекте
+        </div>
+        <div class="panel-body stack-sm">
+          <p class="hint" id="aboutText"></p>
+          <p class="hint">
+            Инструмент предназначен только для авторизованного тестирования на проникновение. Используйте его
+            исключительно в рамках разрешённых работ.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="../js/ui/options.js"></script>
+  </body>
+</html>

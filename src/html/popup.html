@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Colaborator</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/popup.css" />
+    <script src="../js/theme-boot.js"></script>
+  </head>
+  <body class="popup">
+    <header class="popup-header">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="12" r="2.6" fill="currentColor" stroke="none" />
+            <circle cx="12" cy="12" r="6.4" opacity="0.65" />
+            <path d="M12 5.6V3M12 21v-2.6M5.6 12H3M21 12h-2.6" opacity="0.8" />
+          </svg>
+        </span>
+        <div class="brand-text">
+          <h1 class="brand-name">Colaborator</h1>
+          <span class="brand-sub">OAST interactions</span>
+        </div>
+      </div>
+      <div class="row" style="gap: 6px">
+        <span class="badge" id="countBadge" title="Сессий из 10">0 / 10</span>
+        <button class="icon-btn" id="themeToggle" data-theme-toggle title="Сменить тему">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="popup-toolbar">
+      <div class="input-group grow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <circle cx="11" cy="11" r="7" />
+          <path d="m16.5 16.5 4.5 4.5" />
+        </svg>
+        <input
+          id="search"
+          class="input"
+          type="search"
+          placeholder="Поиск по имени или URL"
+          autocomplete="off"
+          spellcheck="false"
+          aria-label="Поиск сессий"
+        />
+      </div>
+      <button class="btn" id="addBtn" title="Создать сессию (N)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+          <path d="M12 5v14M5 12h14" />
+        </svg>
+        <span>Add</span>
+      </button>
+    </div>
+
+    <div class="popup-filters">
+      <div class="segmented" role="group" aria-label="Фильтр сессий">
+        <button class="segmented__item" data-filter="all" aria-pressed="true">Все</button>
+        <button class="segmented__item" data-filter="active" aria-pressed="false">Активные</button>
+        <button class="segmented__item" data-filter="error" aria-pressed="false">Ошибки</button>
+      </div>
+      <select id="sortSelect" class="select select--compact" aria-label="Сортировка">
+        <option value="updated">По обновлению</option>
+        <option value="name">По имени</option>
+        <option value="interactions">По находкам</option>
+        <option value="created">По созданию</option>
+      </select>
+    </div>
+
+    <div id="bulkBar" class="bulk-bar" hidden>
+      <span class="small dim"><b id="selectedCount">0</b> выбрано</span>
+      <button class="btn btn--secondary btn--sm" id="startSelected">Start</button>
+      <button class="btn btn--secondary btn--sm" id="stopSelected">Stop</button>
+      <button class="btn btn--danger-ghost btn--sm" id="deleteSelected">Удалить</button>
+      <button class="icon-btn" id="clearSelection" title="Снять выделение">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M18 6 6 18M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <main id="sessionList" class="session-list" aria-live="polite"></main>
+
+    <footer class="popup-footer">
+      <div class="row">
+        <button class="btn btn--ghost btn--sm" id="exportBtn" title="Скачать JSON со всеми сессиями">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <path d="m7 10 5 5 5-5M12 15V3" />
+          </svg>
+          Export
+        </button>
+        <button class="btn btn--ghost btn--sm" id="importBtn" title="Импортировать сессии и логи">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <path d="m17 8-5-5-5 5M12 3v12" />
+          </svg>
+          Import
+        </button>
+      </div>
+      <div class="row">
+        <span class="hint" id="hintText"></span>
+        <button class="icon-btn" id="optionsBtn" title="Настройки">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+            <path d="M4 7h10M18 7h2M4 17h2M10 17h10" />
+            <circle cx="16" cy="7" r="2" />
+            <circle cx="8" cy="17" r="2" />
+          </svg>
+        </button>
+      </div>
+    </footer>
+
+    <input id="importFile" type="file" accept=".json,.txt,.b64,application/json,text/plain" hidden />
+    <script type="module" src="../js/ui/popup.js"></script>
+  </body>
+</html>

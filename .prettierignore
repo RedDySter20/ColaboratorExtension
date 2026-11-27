@@ -1,0 +1,11 @@
+dist/
+release/
+node_modules/
+_src/
+_pretty/
+tools/
+coverage/
+.preview/
+*.zip
+*.png
+*.jpg

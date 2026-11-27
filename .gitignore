@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+.npm-cache/
+
+# Build output
+dist/
+*.zip
+*.crx
+*.pem
+!release/*.zip
+
+# Local tooling leftovers (legacy bundle extraction)
+_src/
+_pretty/
+tools/
+
+# Coverage / logs
+coverage/
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+
+# Screenshot tool workspace
+.preview/

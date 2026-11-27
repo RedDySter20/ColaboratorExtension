@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Colaborator — OAST interaction dashboard",
+  "short_name": "Colaborator",
+  "version": "2.0.0",
+  "description": "Multi-session OAST dashboard (Burp Collaborator / interactsh): stable polling, parsed interaction logs, hex viewer, import/export and Markdown reports.",
+  "minimum_chrome_version": "116",
+  "permissions": ["storage", "clipboardWrite", "tabs", "alarms", "notifications"],
+  "host_permissions": ["https://*.oastify.com/*", "https://polling.oastify.com/*"],
+  "optional_host_permissions": ["https://*/*"],
+  "background": {
+    "service_worker": "js/background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "html/popup.html",
+    "default_title": "Colaborator",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "options_ui": {
+    "page": "html/options.html",
+    "open_in_tab": true
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

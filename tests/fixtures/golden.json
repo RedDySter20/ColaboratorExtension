@@ -1,0 +1,454 @@
+{
+  "legacyVersion": "1.3.3.7",
+  "correlation": [
+    {
+      "keyHex": "0000000000000000000000000000000000000000000000000000000000000000",
+      "keyB64": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+      "correlationId": "z93539brtrfel4u9fmlw94",
+      "privateUrl": "https://polling.oastify.com:443/burpresults?biid=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA%3D"
+    },
+    {
+      "keyHex": "0102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f20",
+      "keyB64": "AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyA=",
+      "correlationId": "i8fl9xt8qlfy8ewrpery6f",
+      "privateUrl": "https://polling.oastify.com:443/burpresults?biid=AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyA%3D"
+    },
+    {
+      "keyHex": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "keyB64": "//////////////////////////////////////////8=",
+      "correlationId": "sr1m4lgl1w02rnetfybsq6",
+      "privateUrl": "https://polling.oastify.com:443/burpresults?biid=%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8%3D"
+    },
+    {
+      "keyHex": "a3f1c9d27b4e6085a1c3e5f7092b4d6f8a0c2e4b6d8f1a3c5e7b9d0f2a4c6e80",
+      "keyB64": "o/HJ0ntOYIWhw+X3CStNb4oMLkttjxo8XnudDypMboA=",
+      "correlationId": "tvtqur0ouaxerszq5hktmk",
+      "privateUrl": "https://polling.oastify.com:443/burpresults?biid=o%2FHJ0ntOYIWhw%2BX3CStNb4oMLkttjxo8XnudDypMboA%3D"
+    }
+  ],
+  "labels": [
+    {
+      "keyHex": "0000000000000000000000000000000000000000000000000000000000000000",
+      "seed": 1,
+      "labels": [
+        "jvi8u1puov5emjqukejjvuhtbkha5z",
+        "f1h40xvqurbasfwqqapf1qnphgn7bw",
+        "9v5yurpkol54m9qkk4j9vkhjbah25r",
+        "4w1tvmqfpg6zn4rflzk4wfiec5i26r",
+        "0cdpbi6b5cmv307b1v00cbyas1y6mv",
+        "bhw0gtbmanr68bcm665bhm3lxc33tri",
+        "eyg3xwsprq89petpn9meypkoefkkp8e",
+        "r1tg09v2u3bmsrw2qmpr12n1hsnjd93xs"
+      ]
+    },
+    {
+      "keyHex": "0000000000000000000000000000000000000000000000000000000000000000",
+      "seed": 42,
+      "labels": [
+        "211r0kvduebxs2wdqxp21dnch3ntbi",
+        "053p4izbycfvw00buvt05bral1rsfh",
+        "zsvorhmalb2ujznahugzsae980es2h",
+        "z66o5h0azbguxz1avuuz6as9m0sxgm",
+        "lmbal3gwfxwgdlhwbgalmw8v2m8rwg",
+        "vjikidd6c7tqave68q7vj655zw5nvbk",
+        "2wzrvkqdpe6xn2rdlxk2wdicc3i8nwc",
+        "qb5fa85142ll2q610lzqb1x0rrxin8dw2"
+      ]
+    },
+    {
+      "keyHex": "0000000000000000000000000000000000000000000000000000000000000000",
+      "seed": 1337,
+      "labels": [
+        "smihlag3f4wndsh3bnasm3822t8jw8",
+        "z88o7h2a1biuzz3axuwz8au9o0urig",
+        "yiknhgc9bast9yd97t6yi948yz4rsg",
+        "4putomjfigzzg4kfezd4pfbe55b2zr",
+        "e7m36w1p0qh9ye2pw9ve7ptonftkh9",
+        "e9o38w3p2qj90e4py9xe9pvopfv6lua",
+        "8w5xvqqjpk63n8rjl3k8wjiic9ien2c",
+        "t71i6b1405hoyt24wovt74t3nutljb9zy"
+      ]
+    },
+    {
+      "keyHex": "0000000000000000000000000000000000000000000000000000000000000000",
+      "seed": 987654321,
+      "labels": [
+        "0fgpei9b8cpv60ab4v30fb1av11rpg",
+        "idz7c07t6und4i8t2d1idtzstjzanz",
+        "8qzxpqkjjk03h8ljf3e8qjci69c10q",
+        "mwmbv4qxpy6hnmrxlhkmwxiwcnik69",
+        "l9va833w2xjg0l4wygxl9wvvpmvrjg",
+        "cs81rumnlo27jcnnh7gcsnem8de44st",
+        "hyj6xzssrt8cphtsncmhyskreiknpbe",
+        "lodan3iwhxygfljwdgclowav4mad03qrf"
+      ]
+    },
+    {
+      "keyHex": "0102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f20",
+      "seed": 1,
+      "labels": [
+        "jvirtw4vrepu0zoxsj9ydf1b62cs0h",
+        "f1hnzsarxavq6vutyffujb77cyip6e",
+        "9v5htm4lr4pk0pons99od5116sck09",
+        "4w1cuh5gszqf1kpit4aje02w7ndk19",
+        "0cd8adlc8v6bhg5e90qfuwisnjtohd",
+        "bhwjfoqnd6bmmrapebvqz7n3suylo9d",
+        "eygmwr7qu9sp3ursvectga469xf2kq9",
+        "r1tzz4a3xmv267u5yrf6jn7jcai18ryfn"
+      ]
+    },
+    {
+      "keyHex": "0102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f20",
+      "seed": 42,
+      "labels": [
+        "211azfaexxvd6iugy2fhjy7uclib60",
+        "05383dec1vzbagye20jfnwbsgjmaaz",
+        "zsv7qc1boumaxfldpz6eavyr3i9axz",
+        "z6674cfb2u0abfzd3zkeovcrhinfb4",
+        "lmbtkyvxiggwr1fzjl004hsdx439ry",
+        "vji3h8s7fqd6obc9gvxa1rpnue05qtf",
+        "2wzauf5esxqd1ipgt2ahey2u7ldqie7",
+        "qb5y93k27l51g6448qp5tmhim9s0iq8ex"
+      ]
+    },
+    {
+      "keyHex": "0102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f20",
+      "seed": 1337,
+      "labels": [
+        "smi0k5v4ing3r8f6js074oskxb31rq",
+        "z8876chb4u2adf1d5zmeqverjip9dy",
+        "yik6gbraetc9nebcfywd0uoqthz9ny",
+        "4pucnhyglzjfukiim43j70vw0n6ku9",
+        "e7mm5rgq391pcu0s4eltpad6ixo2cr",
+        "e9om7riq593peu2s6entraf6kxqogc5",
+        "8w5gul5ks3qj1opmt8ane4207rdwik7",
+        "t71156g53o14c9074tl8ppdlico3et4ht"
+      ]
+    },
+    {
+      "keyHex": "0102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f20",
+      "seed": 987654321,
+      "labels": [
+        "0fg8ddocbv9bkg8ec0tfxwlsqjw9ky",
+        "idzqbvmu9d7tiy6wairxvejao1usih",
+        "8qzgolzkm3kjvojmn84n84w01r7jv8",
+        "mwmuuz5yshqx12p0tma1ei2e75d21r",
+        "l9vt7yix5g3we12z6ln0rhfdk4q9ey",
+        "cs8kqp1oo7mnxslqpc6ra8y43v9mzao",
+        "hyjpwu7tucss3xrvvhcwgd4990f5kt9",
+        "lodtmyxxkgiwt1hzll206hudz45vvll9a"
+      ]
+    },
+    {
+      "keyHex": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "seed": 1,
+      "labels": [
+        "jvi1csomzsajw9oq1ukz80qgm7sxgm",
+        "f1hxioui5ogf25um7qqvewwcs3yumj",
+        "9v5rcioczia9wzog1kkp8qq6mxspge",
+        "4w1mddp70db4xupb2flk9lr1nstphe",
+        "0cdit953g9r0dq57ib1gph7x3o9txi",
+        "bhwtykaelkwbi1ainm6rusc88zeq4et",
+        "eygwfnrh2ndez4rl4pnubvtbp2v70vp",
+        "r1t9i0uu50gr2huy72q7e8wosfy6owek3"
+      ]
+    },
+    {
+      "keyHex": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "seed": 42,
+      "labels": [
+        "211kibu55bg22su97dqiejwzsqygm5",
+        "053im9y399k06qy7bbugih0xwo2fq4",
+        "zsvh98l2w87ztpl6yahf5gnwjnpfd4",
+        "z66hn8z2a8lz7pz6cavfjg1wxn3kr9",
+        "lmb33ufoqu1lnbfsswb1z2hid9je73",
+        "vjid04cyn4yvklc2p68bwcesajga6yv",
+        "2wzkdbp50bb2xsp92dli9jrznqtvyjn",
+        "qb58sz4tfzqqcg4xh106o76n2e85yvojd"
+      ]
+    },
+    {
+      "keyHex": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "seed": 1337,
+      "labels": [
+        "smia31fvq11snifzs3b8z9hpdgj67v",
+        "z88hp812c8nz9p16eaxflg3wzn5et3",
+        "yikgz7b1m7xyjob5o97evfdv9mfe33",
+        "4pum6di7td44quibvfek2lk1gsmpae",
+        "e7mwon0hbnme840ldpwukv2by247sw",
+        "e9owqn2hdnoea42lfpyumv4b026twhl",
+        "8w5qdhpb0hb8xypf2jlo9pr5nwt1ypn",
+        "t71bo20wb2mt8j00d4w9ka2qyh48uykm9"
+      ]
+    },
+    {
+      "keyHex": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "seed": 987654321,
+      "labels": [
+        "0fgiw983j9u0gq87lb4gshax6oce03",
+        "idz0ur6lhrsie86pjt2yqz8f46axym",
+        "8qzq7hjbuh58ryjfwjfo3pl5hwnobd",
+        "mwm4dvpp0vbmxcpt2xl293rjnat7hw",
+        "l9v3qu2oduolab2sfwy1m24i096eu3",
+        "cs8u9llfwl7ct2ljynhs5tn9j0prff4",
+        "hyjzfqrk2qdhz7ro4snxbytep5va0yp",
+        "lod35uhosu3lpbhsuwd112jif9l0bq1eq"
+      ]
+    },
+    {
+      "keyHex": "a3f1c9d27b4e6085a1c3e5f7092b4d6f8a0c2e4b6d8f1a3c5e7b9d0f2a4c6e80",
+      "seed": 1,
+      "labels": [
+        "jvi2glw5dvrfr2vjd8t30djptgz6nv",
+        "f1hymh21jrxbxy1fj4zz69plzc53ts",
+        "9v5sgbwvdlr5rsv9dytt03jft6zynn",
+        "4w1nh6xqegs0snw4etuo1ykau10yon",
+        "0cdjx2dmuc8w8jc0upakhu06axg24r",
+        "bhwu2dixznd7duhbz0fvm55hf8lzbn0",
+        "eygxjgz0gquauxyeg3wy38mkwb2g74w",
+        "r1tamt2dj3xnxa1rjgzb6lpxzo5fv5lta"
+      ]
+    },
+    {
+      "keyHex": "a3f1c9d27b4e6085a1c3e5f7092b4d6f8a0c2e4b6d8f1a3c5e7b9d0f2a4c6e80",
+      "seed": 42,
+      "labels": [
+        "211lm42ojexyxl12jrzm6wp8zz5pte",
+        "053jq26mnc1w1j50np3kaut63x9oxd",
+        "zsvid1tlabovoiszaoqjxtg5qwwokd",
+        "z66ir17lob2v2i6zoo4jbtu54watyi",
+        "lmb47nn74xihi4ml4ak5rfarkiqnec",
+        "vjie4xkh17frfejv1khfop71hsnjd72",
+        "2wzlh4xoeesyslw2erum1wk8uz045su",
+        "qb59wscct27m79bqtf9agkzw9nfe54vsk"
+      ]
+    },
+    {
+      "keyHex": "a3f1c9d27b4e6085a1c3e5f7092b4d6f8a0c2e4b6d8f1a3c5e7b9d0f2a4c6e80",
+      "seed": 1337,
+      "labels": [
+        "smib7une44ioibms4hkcrmaykpqfe4",
+        "z88it19lqb4v4i8zqo6jdtw56wcn0c",
+        "yikh30jk0aeuehiy0ngins64gvmnac",
+        "4puna6qq7gl0lnp47tnouydan1tyhn",
+        "e7mxsg80pq3a3x7ep35yc8vk5bbgz5",
+        "e9oxuga0rq5a5x9er37ye8xk7bd23qs",
+        "8w5rhaxueks4srw8exus12keu50a5yu",
+        "t71csv8fp53p3c7tpi5dcnvz5qbh17rvg"
+      ]
+    },
+    {
+      "keyHex": "a3f1c9d27b4e6085a1c3e5f7092b4d6f8a0c2e4b6d8f1a3c5e7b9d0f2a4c6e80",
+      "seed": 987654321,
+      "labels": [
+        "0fgj02gmxcbwbjf0xpdkku36dxjn7c",
+        "idz1yke4vu9e91div7b2ic1obfh65v",
+        "8qzrbaru8km4mrq88xosv2eeo5uxim",
+        "mwm5hox8eysis5wmebu61gksuj0go5",
+        "l9v4una7rx5h549lra75efxr7idn1c",
+        "cs8vdetyaoo8ovsca1qwx6giq9w0mob",
+        "hyj0jjz3gtudu0yhg6w13bmnwe2j77w",
+        "lod49np76xkhk4ol6am5tfcrmis9iz8nx"
+      ]
+    }
+  ],
+  "encoder": [
+    {
+      "keyCodes": [97, 122],
+      "vectors": [
+        {
+          "plaintext": "",
+          "encoded": ""
+        },
+        {
+          "plaintext": "a",
+          "encoded": "a"
+        },
+        {
+          "plaintext": "1g0yz",
+          "encoded": "15rtg"
+        },
+        {
+          "plaintext": "1gffyz",
+          "encoded": "156auz"
+        },
+        {
+          "plaintext": "z93539brtrfel4u9fmlw941g10yz",
+          "encoded": "zystlsm95qaulo5nazllkfbl2bq0"
+        },
+        {
+          "plaintext": "0123456789abcdefghijklmnopqrstuvwxyz",
+          "encoded": "0qsjmeibgagbiemjsq0zaamn02gjy2in4asz"
+        }
+      ]
+    },
+    {
+      "keyCodes": [97, 122],
+      "vectors": [
+        {
+          "plaintext": "",
+          "encoded": ""
+        },
+        {
+          "plaintext": "a",
+          "encoded": "a"
+        },
+        {
+          "plaintext": "1g0yz",
+          "encoded": "15rtg"
+        },
+        {
+          "plaintext": "1gffyz",
+          "encoded": "156auz"
+        },
+        {
+          "plaintext": "i8fl9xt8qlfy8ewrpery6f1g10yz",
+          "encoded": "ixn8mv5tl4qsowadph652atgk68v"
+        },
+        {
+          "plaintext": "0123456789abcdefghijklmnopqrstuvwxyz",
+          "encoded": "0qsjmeibgagbiemjsq0zaamn02gjy2in4asz"
+        }
+      ]
+    },
+    {
+      "keyCodes": [97, 122],
+      "vectors": [
+        {
+          "plaintext": "",
+          "encoded": ""
+        },
+        {
+          "plaintext": "a",
+          "encoded": "a"
+        },
+        {
+          "plaintext": "1g0yz",
+          "encoded": "15rtg"
+        },
+        {
+          "plaintext": "1gffyz",
+          "encoded": "156auz"
+        },
+        {
+          "plaintext": "sr1m4lgl1w02rnetfybsq61g10yz",
+          "encoded": "sgjsd3jea00sh5loqcru7qywpmdb"
+        },
+        {
+          "plaintext": "0123456789abcdefghijklmnopqrstuvwxyz",
+          "encoded": "0qsjmeibgagbiemjsq0zaamn02gjy2in4asz"
+        }
+      ]
+    },
+    {
+      "keyCodes": [97, 122],
+      "vectors": [
+        {
+          "plaintext": "",
+          "encoded": ""
+        },
+        {
+          "plaintext": "a",
+          "encoded": "a"
+        },
+        {
+          "plaintext": "1g0yz",
+          "encoded": "15rtg"
+        },
+        {
+          "plaintext": "1gffyz",
+          "encoded": "156auz"
+        },
+        {
+          "plaintext": "tvtqur0ouaxerszq5hktmk1g10yz",
+          "encoded": "tkc0whmv6vtzahzxu44ngx73ytmi"
+        },
+        {
+          "plaintext": "0123456789abcdefghijklmnopqrstuvwxyz",
+          "encoded": "0qsjmeibgagbiemjsq0zaamn02gjy2in4asz"
+        }
+      ]
+    }
+  ],
+  "sessionGen": [
+    {
+      "keyHex": "0000000000000000000000000000000000000000000000000000000000000000",
+      "keyB64": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+      "urls": [
+        {
+          "publicUrl": "https://2firek9d8epx62ad4x32fd1cv31tpi.oastify.com",
+          "privateUrl": "https://polling.oastify.com:443/burpresults?biid=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA%3D"
+        },
+        {
+          "publicUrl": "https://fm54lxgqfrwadfhqbaafmq8p2g87ww.oastify.com",
+          "privateUrl": "https://polling.oastify.com:443/burpresults?biid=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA%3D"
+        },
+        {
+          "publicUrl": "https://rtogs9n2m33mkro2imhrt2f19sfk39.oastify.com",
+          "privateUrl": "https://polling.oastify.com:443/burpresults?biid=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA%3D"
+        }
+      ]
+    },
+    {
+      "keyHex": "0102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f20",
+      "keyB64": "AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyA=",
+      "urls": [
+        {
+          "publicUrl": "https://2fiadfoebx9dki8gc2thxyluqlwbk0.oastify.com",
+          "privateUrl": "https://polling.oastify.com:443/burpresults?biid=AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyA%3D"
+        },
+        {
+          "publicUrl": "https://fm5nksvriagqrvftjf0u4bs7xy3pre.oastify.com",
+          "privateUrl": "https://polling.oastify.com:443/burpresults?biid=AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyA%3D"
+        },
+        {
+          "publicUrl": "https://rtozr423pmn2y7m5qr76bnzj4aa2yr.oastify.com",
+          "privateUrl": "https://polling.oastify.com:443/burpresults?biid=AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyA%3D"
+        }
+      ]
+    },
+    {
+      "keyHex": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "keyB64": "//////////////////////////////////////////8=",
+      "urls": [
+        {
+          "publicUrl": "https://2fikwb85jbu2gs89ld4isjaz6qcg05.oastify.com",
+          "privateUrl": "https://polling.oastify.com:443/burpresults?biid=%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8%3D"
+        },
+        {
+          "publicUrl": "https://fm5x3ofiqo1fn5fmsqbvzwhcd3ju7j.oastify.com",
+          "privateUrl": "https://polling.oastify.com:443/burpresults?biid=%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8%3D"
+        },
+        {
+          "publicUrl": "https://rto9a0mux08ruhmyz2i768ookfq7ew.oastify.com",
+          "privateUrl": "https://polling.oastify.com:443/burpresults?biid=%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8%3D"
+        }
+      ]
+    },
+    {
+      "keyHex": "a3f1c9d27b4e6085a1c3e5f7092b4d6f8a0c2e4b6d8f1a3c5e7b9d0f2a4c6e80",
+      "keyB64": "o/HJ0ntOYIWhw+X3CStNb4oMLkttjxo8XnudDypMboA=",
+      "urls": [
+        {
+          "publicUrl": "https://2fil04goxebyblf2xrdmkw38dzjp7e.oastify.com",
+          "privateUrl": "https://polling.oastify.com:443/burpresults?biid=o%2FHJ0ntOYIWhw%2BX3CStNb4oMLkttjxo8XnudDypMboA%3D"
+        },
+        {
+          "publicUrl": "https://fm5y7hn14ribiymf44kzr9alkcq3es.oastify.com",
+          "privateUrl": "https://polling.oastify.com:443/burpresults?biid=o%2FHJ0ntOYIWhw%2BX3CStNb4oMLkttjxo8XnudDypMboA%3D"
+        },
+        {
+          "publicUrl": "https://rtoaetudb3pnpatrbgrbylhxroxgl5.oastify.com",
+          "privateUrl": "https://polling.oastify.com:443/burpresults?biid=o%2FHJ0ntOYIWhw%2BX3CStNb4oMLkttjxo8XnudDypMboA%3D"
+        }
+      ]
+    }
+  ],
+  "helpers": {
+    "keyHex": "000102fffe804020",
+    "keyB64": "AAEC//6AQCA=",
+    "utf8B64": "0J/RgNC40LLQtdGCLCBjb2xsYWJvcmF0ZSEgNDI=",
+    "b64RoundTrip": "Привет, collaborate! 42",
+    "bigint": "284773486444576"
+  }
+}
