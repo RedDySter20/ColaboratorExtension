@@ -121,9 +121,10 @@ hex-просмотра, истории и отчётов. Colaborator закры
 
 ### Вариант 1. Из готового архива
 
-1. Скачайте `ColaboratorExtension-v2.0.0.zip` из раздела
-   [Releases](https://github.com/RedDySter20/ColaboratorExtension/releases)
-   (или соберите сами: `npm run build:zip` — архив появится в `release/`).
+1. Скачайте архив `ColaboratorExtension-v2.0.0.zip` — он лежит в репозитории
+   ([`release/`](release)) и публикуется в
+   [Releases](https://github.com/RedDySter20/ColaboratorExtension/releases) при
+   создании тега `v*`. Собрать самому: `npm run build:zip`.
 2. Распакуйте архив в любую папку.
 3. Откройте `chrome://extensions/` и включите **Режим разработчика**.
 
